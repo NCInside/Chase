@@ -13,6 +13,8 @@
 		0441F0DD2A07EA8A0079EE99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0441F0DC2A07EA8A0079EE99 /* Preview Assets.xcassets */; };
 		0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0DE2A07EA8A0079EE99 /* Persistence.swift */; };
 		0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */; };
+		0441F0E92A07F62D0079EE99 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */; };
+		0441F0EB2A07F7A00079EE99 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0441F0DC2A07EA8A0079EE99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0441F0DE2A07EA8A0079EE99 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0441F0E12A07EA8A0079EE99 /* Chase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chase.xcdatamodel; sourceTree = "<group>"; };
+		0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0441F0D92A07EA8A0079EE99 /* Assets.xcassets */,
 				0441F0DE2A07EA8A0079EE99 /* Persistence.swift */,
 				0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */,
+				0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */,
+				0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */,
 				0441F0DB2A07EA8A0079EE99 /* Preview Content */,
 			);
 			path = Chase;
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */,
+				0441F0E92A07F62D0079EE99 /* UnitExtensions.swift in Sources */,
 				0441F0D82A07EA890079EE99 /* ContentView.swift in Sources */,
+				0441F0EB2A07F7A00079EE99 /* FormatDisplay.swift in Sources */,
 				0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */,
 				0441F0D62A07EA890079EE99 /* ChaseApp.swift in Sources */,
 			);
