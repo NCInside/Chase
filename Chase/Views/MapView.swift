@@ -12,16 +12,14 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     @ObservedObject var controller: NewRunViewController
-    var mapView: MKMapView
     
     func makeUIView(context: Context) -> MKMapView {
-            let mapView = MKMapView()
-            mapView.delegate = controller
-            return mapView
-        }
+        controller.map.delegate = controller
+        return controller.map
+    }
         
     func updateUIView(_ uiView: MKMapView, context: Context) {
-        // Update the map view if needed
+        //
     }
     
 }

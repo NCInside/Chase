@@ -22,7 +22,28 @@ final class NewRunViewController: NSObject, ObservableObject {
     @Published var paceLabel = "Pace:"
     @Published var isRunning = false
     @Published var showAlert =  false
-    @Published var isActive = false
+    @Published var map: MKMapView = MKMapView()
+//    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37, longitude: -121), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+    
+    override init() {
+        super.init()
+        switch locationManager.authorizationStatus {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            print("Location is restricted")
+        case .denied:
+            print("Denied. Go to Setting to change it")
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("Authorized")
+//            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            
+        @unknown default:
+            print("What the hell")
+            break
+        }
+    }
     
     func startTapped() {
         isRunning = true
@@ -34,11 +55,12 @@ final class NewRunViewController: NSObject, ObservableObject {
         stopRun()
         if isSave {
             saveRun()
-            isActive = true
         }
+        timer?.invalidate()
     }
     
     private func startRun() {
+        map.removeOverlays(map.overlays)
         seconds = 0
         distance = Measurement(value: 0, unit: UnitLength.meters)
         locationList.removeAll()
@@ -99,7 +121,6 @@ final class NewRunViewController: NSObject, ObservableObject {
 }
 
 extension NewRunViewController: CLLocationManagerDelegate {
-
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for newLocation in locations {
             let howRecent = newLocation.timestamp.timeIntervalSinceNow
@@ -109,14 +130,33 @@ extension NewRunViewController: CLLocationManagerDelegate {
                 let delta = newLocation.distance(from: lastLocation)
                 distance = distance + Measurement(value: delta, unit: UnitLength.meters)
                 let coordinates = [lastLocation.coordinate, newLocation.coordinate]
-                mapView.add(MKPolyline(coordinates: coordinates, count: 2))
+                map.addOverlay(MKPolyline(coordinates: coordinates, count: 2))
                 let region = MKCoordinateRegion(center: newLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-                mapView.setRegion(region, animated: true)
+                map.setRegion(region, animated: true)
             }
             locationList.append(newLocation)
             
         }
     }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        switch locationManager.authorizationStatus {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            print("Location is restricted")
+        case .denied:
+            print("Denied. Go to Setting to change it")
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("Authorized")
+//            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            
+        @unknown default:
+            break
+        }
+    }
+    
 }
 
 extension NewRunViewController: MKMapViewDelegate {

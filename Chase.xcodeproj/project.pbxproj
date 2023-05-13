@@ -14,7 +14,6 @@
 		0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0DE2A07EA8A0079EE99 /* Persistence.swift */; };
 		0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */; };
 		0441F0F32A07FDFB0079EE99 /* NewRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0F22A07FDFB0079EE99 /* NewRunView.swift */; };
-		0441F0F52A07FE0B0079EE99 /* RunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */; };
 		0499A8A72A0F1F8A00447FD2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A62A0F1F8A00447FD2 /* LocationManager.swift */; };
 		0499A8AA2A0F1FAF00447FD2 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A82A0F1FAF00447FD2 /* FormatDisplay.swift */; };
 		0499A8AB2A0F1FAF00447FD2 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A92A0F1FAF00447FD2 /* UnitExtensions.swift */; };
@@ -33,7 +32,6 @@
 		0441F0E12A07EA8A0079EE99 /* Chase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chase.xcdatamodel; sourceTree = "<group>"; };
 		0441F0EE2A07F99D0079EE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0441F0F22A07FDFB0079EE99 /* NewRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRunView.swift; sourceTree = "<group>"; };
-		0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailView.swift; sourceTree = "<group>"; };
 		0499A8A62A0F1F8A00447FD2 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0499A8A82A0F1FAF00447FD2 /* FormatDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		0499A8A92A0F1FAF00447FD2 /* UnitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				0499A8AC2A0F217C00447FD2 /* HomeView.swift */,
 				0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */,
 				0441F0F22A07FDFB0079EE99 /* NewRunView.swift */,
-				0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */,
 				0499A8B22A0F842D00447FD2 /* MapView.swift */,
 			);
 			path = Views;
@@ -201,7 +198,6 @@
 				0441F0D82A07EA890079EE99 /* ContentView.swift in Sources */,
 				0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */,
 				0499A8B52A0F846E00447FD2 /* NewRunViewController.swift in Sources */,
-				0441F0F52A07FE0B0079EE99 /* RunDetailView.swift in Sources */,
 				0499A8AA2A0F1FAF00447FD2 /* FormatDisplay.swift in Sources */,
 				0441F0F32A07FDFB0079EE99 /* NewRunView.swift in Sources */,
 				0441F0D62A07EA890079EE99 /* ChaseApp.swift in Sources */,

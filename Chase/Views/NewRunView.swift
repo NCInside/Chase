@@ -21,6 +21,9 @@ struct NewRunView: View {
                 Text(controller.distanceLabel)
                 Text(controller.timeLabel)
                 Text(controller.paceLabel)
+//                Map(coordinateRegion: $controller.region
+//                    ,showsUserLocation: true)
+//                .frame(height: 300)
                 Spacer()
                 if controller.isRunning {
                     Button("Stop") {
@@ -40,7 +43,6 @@ struct NewRunView: View {
                         controller.startTapped()
                     }
                 }
-                NavigationLink("", destination:  RunDetailView(), isActive: $controller.isActive)
             }.padding(20)
         }
     }
