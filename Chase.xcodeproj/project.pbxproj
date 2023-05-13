@@ -20,6 +20,7 @@
 		0499A8AD2A0F217C00447FD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8AC2A0F217C00447FD2 /* HomeView.swift */; };
 		0499A8B32A0F842D00447FD2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8B22A0F842D00447FD2 /* MapView.swift */; };
 		0499A8B52A0F846E00447FD2 /* NewRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */; };
+		0499A8B72A0FDDEB00447FD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8B62A0FDDEB00447FD2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0499A8AC2A0F217C00447FD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0499A8B22A0F842D00447FD2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRunViewController.swift; sourceTree = "<group>"; };
+		0499A8B62A0FDDEB00447FD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0441F0D72A07EA890079EE99 /* ContentView.swift */,
+				0499A8B62A0FDDEB00447FD2 /* HomeViewController.swift */,
 				0499A8AC2A0F217C00447FD2 /* HomeView.swift */,
 				0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */,
 				0441F0F22A07FDFB0079EE99 /* NewRunView.swift */,
@@ -201,6 +204,7 @@
 				0499A8AA2A0F1FAF00447FD2 /* FormatDisplay.swift in Sources */,
 				0441F0F32A07FDFB0079EE99 /* NewRunView.swift in Sources */,
 				0441F0D62A07EA890079EE99 /* ChaseApp.swift in Sources */,
+				0499A8B72A0FDDEB00447FD2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
+    @StateObject private var controller = HomeViewController()
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Run.distance, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<Run>
+    
     var body: some View {
         NavigationStack {
+            
+            List {
+                ForEach(items) { item in
+                    
+                    Text("Run at \(item.timestamp!, formatter: controller.dateFormatterGet) For \(item.duration) seconds and \(item.distance) miles")
+                }
+            }
+            
             NavigationLink {
                 NewRunView()
             } label: {
