@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Chase needs access to your location in order to record and track your run!</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Chase needs access to your location in order to record and track your run!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Chase needs access to your location in order to record and track your run!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Chase needs access to your location in order to record and track your run!</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+</dict>
+</plist>

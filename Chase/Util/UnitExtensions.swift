@@ -1,10 +1,3 @@
-//
-//  UnitExtensions.swift
-//  Chase
-//
-//  Created by MacBook Pro on 07/05/23.
-//
-
 import Foundation
 
 class UnitConverterPace: UnitConverter {

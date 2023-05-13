@@ -13,8 +13,14 @@
 		0441F0DD2A07EA8A0079EE99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0441F0DC2A07EA8A0079EE99 /* Preview Assets.xcassets */; };
 		0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0DE2A07EA8A0079EE99 /* Persistence.swift */; };
 		0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */; };
-		0441F0E92A07F62D0079EE99 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */; };
-		0441F0EB2A07F7A00079EE99 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */; };
+		0441F0F32A07FDFB0079EE99 /* NewRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0F22A07FDFB0079EE99 /* NewRunView.swift */; };
+		0441F0F52A07FE0B0079EE99 /* RunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */; };
+		0499A8A72A0F1F8A00447FD2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A62A0F1F8A00447FD2 /* LocationManager.swift */; };
+		0499A8AA2A0F1FAF00447FD2 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A82A0F1FAF00447FD2 /* FormatDisplay.swift */; };
+		0499A8AB2A0F1FAF00447FD2 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8A92A0F1FAF00447FD2 /* UnitExtensions.swift */; };
+		0499A8AD2A0F217C00447FD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8AC2A0F217C00447FD2 /* HomeView.swift */; };
+		0499A8B32A0F842D00447FD2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8B22A0F842D00447FD2 /* MapView.swift */; };
+		0499A8B52A0F846E00447FD2 /* NewRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +31,15 @@
 		0441F0DC2A07EA8A0079EE99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0441F0DE2A07EA8A0079EE99 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0441F0E12A07EA8A0079EE99 /* Chase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chase.xcdatamodel; sourceTree = "<group>"; };
-		0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
-		0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		0441F0EE2A07F99D0079EE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0441F0F22A07FDFB0079EE99 /* NewRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRunView.swift; sourceTree = "<group>"; };
+		0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailView.swift; sourceTree = "<group>"; };
+		0499A8A62A0F1F8A00447FD2 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0499A8A82A0F1FAF00447FD2 /* FormatDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		0499A8A92A0F1FAF00447FD2 /* UnitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		0499A8AC2A0F217C00447FD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0499A8B22A0F842D00447FD2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +72,12 @@
 		0441F0D42A07EA890079EE99 /* Chase */ = {
 			isa = PBXGroup;
 			children = (
+				0441F0EE2A07F99D0079EE99 /* Info.plist */,
+				0499A8AF2A0F82DB00447FD2 /* Core Data */,
+				0499A8AE2A0F82A200447FD2 /* Util */,
+				0441F0EF2A07FD870079EE99 /* Views */,
 				0441F0D52A07EA890079EE99 /* ChaseApp.swift */,
-				0441F0D72A07EA890079EE99 /* ContentView.swift */,
 				0441F0D92A07EA8A0079EE99 /* Assets.xcassets */,
-				0441F0DE2A07EA8A0079EE99 /* Persistence.swift */,
-				0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */,
-				0441F0E82A07F62D0079EE99 /* UnitExtensions.swift */,
-				0441F0EA2A07F7A00079EE99 /* FormatDisplay.swift */,
 				0441F0DB2A07EA8A0079EE99 /* Preview Content */,
 			);
 			path = Chase;
@@ -77,6 +89,38 @@
 				0441F0DC2A07EA8A0079EE99 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0441F0EF2A07FD870079EE99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0441F0D72A07EA890079EE99 /* ContentView.swift */,
+				0499A8AC2A0F217C00447FD2 /* HomeView.swift */,
+				0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */,
+				0441F0F22A07FDFB0079EE99 /* NewRunView.swift */,
+				0441F0F42A07FE0B0079EE99 /* RunDetailView.swift */,
+				0499A8B22A0F842D00447FD2 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0499A8AE2A0F82A200447FD2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0499A8A62A0F1F8A00447FD2 /* LocationManager.swift */,
+				0499A8A82A0F1FAF00447FD2 /* FormatDisplay.swift */,
+				0499A8A92A0F1FAF00447FD2 /* UnitExtensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0499A8AF2A0F82DB00447FD2 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0441F0E02A07EA8A0079EE99 /* Chase.xcdatamodeld */,
+				0441F0DE2A07EA8A0079EE99 /* Persistence.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +194,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */,
-				0441F0E92A07F62D0079EE99 /* UnitExtensions.swift in Sources */,
+				0499A8B32A0F842D00447FD2 /* MapView.swift in Sources */,
+				0499A8AB2A0F1FAF00447FD2 /* UnitExtensions.swift in Sources */,
+				0499A8A72A0F1F8A00447FD2 /* LocationManager.swift in Sources */,
+				0499A8AD2A0F217C00447FD2 /* HomeView.swift in Sources */,
 				0441F0D82A07EA890079EE99 /* ContentView.swift in Sources */,
-				0441F0EB2A07F7A00079EE99 /* FormatDisplay.swift in Sources */,
 				0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */,
+				0499A8B52A0F846E00447FD2 /* NewRunViewController.swift in Sources */,
+				0441F0F52A07FE0B0079EE99 /* RunDetailView.swift in Sources */,
+				0499A8AA2A0F1FAF00447FD2 /* FormatDisplay.swift in Sources */,
+				0441F0F32A07FDFB0079EE99 /* NewRunView.swift in Sources */,
 				0441F0D62A07EA890079EE99 /* ChaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +336,7 @@
 				DEVELOPMENT_TEAM = 592BA54XZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +366,7 @@
 				DEVELOPMENT_TEAM = 592BA54XZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
