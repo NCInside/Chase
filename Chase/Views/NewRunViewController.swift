@@ -23,26 +23,10 @@ final class NewRunViewController: NSObject, ObservableObject {
     @Published var isRunning = false
     @Published var showAlert =  false
     @Published var map: MKMapView = MKMapView()
-//    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37, longitude: -121), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     
     override init() {
         super.init()
-        switch locationManager.authorizationStatus {
-            
-        case .notDetermined:
-            locationManager.requestWhenInUseAuthorization()
-        case .restricted:
-            print("Location is restricted")
-        case .denied:
-            print("Denied. Go to Setting to change it")
-        case .authorizedAlways, .authorizedWhenInUse:
-            print("Authorized")
-//            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
-            
-        @unknown default:
-            print("What the hell")
-            break
-        }
+        checkLocationAuthorization()
     }
     
     func startTapped() {
@@ -85,7 +69,7 @@ final class NewRunViewController: NSObject, ObservableObject {
         let formattedTime = FormatDisplay.time(seconds)
         let formattedPace = FormatDisplay.pace(distance: distance,
                                                seconds: seconds,
-                                               outputUnit: UnitSpeed.minutesPerMile)
+                                               outputUnit: UnitSpeed.minutesPerKilometer)
         
         distanceLabel = "Distance:  \(formattedDistance)"
         timeLabel = "Time:  \(formattedTime)"
@@ -118,6 +102,23 @@ final class NewRunViewController: NSObject, ObservableObject {
         run = newRun
     }
     
+    func checkLocationAuthorization() {
+        switch locationManager.authorizationStatus {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            print("Location is restricted")
+        case .denied:
+            print("Denied. Go to Setting to change it")
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("Authorized")
+            
+        @unknown default:
+            break
+        }
+    }
+    
 }
 
 extension NewRunViewController: CLLocationManagerDelegate {
@@ -140,21 +141,7 @@ extension NewRunViewController: CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch locationManager.authorizationStatus {
-            
-        case .notDetermined:
-            locationManager.requestWhenInUseAuthorization()
-        case .restricted:
-            print("Location is restricted")
-        case .denied:
-            print("Denied. Go to Setting to change it")
-        case .authorizedAlways, .authorizedWhenInUse:
-            print("Authorized")
-//            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
-            
-        @unknown default:
-            break
-        }
+        checkLocationAuthorization()
     }
     
 }
