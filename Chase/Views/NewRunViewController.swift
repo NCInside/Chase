@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-final class NewRunViewController: NSObject, ObservableObject {
+class NewRunViewController: NSObject, ObservableObject {
     
     @Published var run: Run?
     @Published var locationManager = LocationManager.shared

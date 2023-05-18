@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04366F1F2A16338600C9227F /* RunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04366F1E2A16338600C9227F /* RunDetailView.swift */; };
+		04366F212A1633A700C9227F /* RunDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04366F202A1633A700C9227F /* RunDetailViewController.swift */; };
 		0441F0D62A07EA890079EE99 /* ChaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0D52A07EA890079EE99 /* ChaseApp.swift */; };
 		0441F0D82A07EA890079EE99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441F0D72A07EA890079EE99 /* ContentView.swift */; };
 		0441F0DA2A07EA8A0079EE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0441F0D92A07EA8A0079EE99 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04366F1E2A16338600C9227F /* RunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailView.swift; sourceTree = "<group>"; };
+		04366F202A1633A700C9227F /* RunDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailViewController.swift; sourceTree = "<group>"; };
 		0441F0D22A07EA890079EE99 /* Chase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0441F0D52A07EA890079EE99 /* ChaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseApp.swift; sourceTree = "<group>"; };
 		0441F0D72A07EA890079EE99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				0499A8B42A0F846E00447FD2 /* NewRunViewController.swift */,
 				0441F0F22A07FDFB0079EE99 /* NewRunView.swift */,
 				0499A8B22A0F842D00447FD2 /* MapView.swift */,
+				04366F1E2A16338600C9227F /* RunDetailView.swift */,
+				04366F202A1633A700C9227F /* RunDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,10 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0441F0DF2A07EA8A0079EE99 /* Persistence.swift in Sources */,
+				04366F212A1633A700C9227F /* RunDetailViewController.swift in Sources */,
 				0499A8B32A0F842D00447FD2 /* MapView.swift in Sources */,
 				0499A8AB2A0F1FAF00447FD2 /* UnitExtensions.swift in Sources */,
 				0499A8A72A0F1F8A00447FD2 /* LocationManager.swift in Sources */,
 				0499A8AD2A0F217C00447FD2 /* HomeView.swift in Sources */,
+				04366F1F2A16338600C9227F /* RunDetailView.swift in Sources */,
 				0441F0D82A07EA890079EE99 /* ContentView.swift in Sources */,
 				0441F0E22A07EA8A0079EE99 /* Chase.xcdatamodeld in Sources */,
 				0499A8B52A0F846E00447FD2 /* NewRunViewController.swift in Sources */,

@@ -22,7 +22,11 @@ struct HomeView: View {
             List {
                 ForEach(items) { item in
                     
-                    Text("Run at \(item.timestamp!, formatter: controller.dateFormatterGet) For \(item.duration) seconds and \(item.distance) miles")
+                    NavigationLink {
+                        RunDetailView(run: item)
+                    } label: {
+                        Text("Run at \(item.timestamp!, formatter: controller.dateFormatterGet) For \(item.duration) seconds and \(item.distance) meter")
+                    }
                 }
             }
             
